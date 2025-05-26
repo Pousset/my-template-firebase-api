@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bibliothèque Firebase</title>
+</head>
+
+<body>
+  <h2>Ajouter son propre livre</h2>
+
+  <input type="text" id="titleInput" placeholder="Titre">
+  <input type="text" id="authorInput" placeholder="Auteur">
+  <button id="addButton">Ajouter</button>
+
+  <h2> Rechercher un livre via OpenLibrary</h2>
+  <input type="text" id="searchInput" placeholder="Titre du livre a rechercher">
+  <button id="searchButton">Rechercher</button>
+  <div id="searchResults"></div>
+
+  <h2>Livres enregistrés</h2>
+  <ul id="bookList"></ul>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    window.db = db;
+  </script>
+
+  <script type="module" src="app.js"></script>
+  <script type="module" src="search.js"></script>
+</body>
+</html>

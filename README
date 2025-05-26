@@ -1,0 +1,80 @@
+# PIETTE Mathis's Template Firebase
+
+Ce projet est une application web simple pour gérer une bibliothèque de livres avec **Firebase Firestore**.
+
+---
+
+## MES CONTACTS
+
+- [MAIL] : mathispiette@gmail.com
+- [MON_SITE] : mathispiette.fr
+- [GITHUB] : https://github.com/Pousset
+- [LINKEDIN] : https://www.linkedin.com/in/mathis-piette-448752153/
+
+---
+
+## Objectif
+
+Les objectifs sont de montrer **la simplicité d'intégration de Firebase** dans un projet web et **La création d'un template réutilisable par tous**. Vous pourrez rechercher des livres via une API publique, les ajouter à votre bibliothèque et les sauvegarder dans Firestore.
+
+---
+
+## Important - Sécurité & Configuration
+
+⚠️ **Ce projet contient une configuration Firebase publique d'exemple que je vous mets à disposition pour tester le template.**
+
+> **Ne laissez jamais votre configuration Firebase en production accessible à tous.**
+
+Chaque utilisateur doit créer son propre projet Firebase, générer sa propre configuration, et la remplacer dans le fichier `firebase.js`.
+
+Cela évite que d'autres utilisateurs puissent modifier ou consulter vos données.
+
+---
+
+## Comment utiliser ce projet
+
+1. Clonez ce dépôt
+2. Créez un projet sur [Firebase Console](https://console.firebase.google.com)
+3. Activez Firestore dans ce projet
+4. Copiez la configuration Firebase (apiKey, authDomain, projectId, etc.)
+5. Remplacez la configuration dans `firebase.js` (section `<script type="module">`)
+6. Ouvrez `index.html` dans votre navigateur
+
+---
+
+## Fonctionnalités
+
+- Rechercher des livres via l'API Open Library
+- Ajouter des livres dans Firestore
+- Afficher et supprimer les livres sauvegardés
+
+---
+
+## A savoir
+
+- Ce projet est **éducatif** et n’est pas sécurisé pour un usage en production.
+- Pour un vrai projet, configurez les règles de sécurité Firebase pour restreindre les accès.
+- Pour un usage multi-utilisateurs, il faudra ajouter un système d'authentification.
+
+---
+
+## Ressources utiles
+
+- [Documentation Firebase Firestore](https://firebase.google.com/docs/firestore)
+- [Console Firebase](https://console.firebase.google.com)
+- [API Open Library](https://openlibrary.org/developers/api)
+
+---
+
+## MES CONTACTS
+
+- [MAIL] : mathispiette@gmail.com
+- [MON_SITE] : mathispiette.fr
+- [GITHUB] : https://github.com/Pousset
+- [LINKEDIN] : https://www.linkedin.com/in/mathis-piette-448752153/
+
+---
+
+## Licence
+
+Ce projet est sous licence MIT - libre à vous de l’adapter pour vos besoins.
