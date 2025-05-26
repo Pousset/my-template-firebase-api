@@ -12,10 +12,13 @@ const searchResults = document.getElementById("searchResults");
 async function enregistrerHistorique(terme) {
   try {
     const now = new Date();
-    const dateRecherche = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${now.getFullYear()}`;
+    const dateRecherche = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${now.getFullYear()} `; 
+    const timeRecherche = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+    
     await addDoc(collection(db, "historique"), {
       terme,
-      date: dateRecherche
+      date: dateRecherche,
+      time: timeRecherche,
     });
   } catch (error) {
     console.error("Erreur lors de l'enregistrement de la recherche :", error);
